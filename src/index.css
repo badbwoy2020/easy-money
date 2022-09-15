@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*10px => 1rem*/
+}
+
+/* tab portrait 600-900px*/
+@media screen and (max-width: 56.25em) {
+  /* 8px => 1rem */
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 900=> 1200 tab-landscape */
+@media screen and (max-width: 74em) {
+  /* 9px => 1rem */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* 1800 Big-Desktop */
+@media screen and (max-width: 112em) {
+  /* 12px => 1rem */
+  html {
+    font-size: 75%;
+  }
+}

@@ -1,0 +1,44 @@
+.app {
+  position: relative;
+}
+
+.style--color {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: "inter";
+  font-size: 1rem;
+}
+.style--color-bg {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-family: "inter";
+  font-size: 1.5rem;
+}
+
+.max__container {
+  max-width: 112rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 40.625em) {
+  .style--color {
+    padding: 0.45rem 1rem;
+    font-size: 0.75rem;
+    margin-top: -1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .style--color {
+    font-size: 0.75rem;
+  }
+}

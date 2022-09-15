@@ -1,0 +1,145 @@
+.newsletter {
+  padding: 1rem 0;
+  background: #f4f4f4;
+}
+
+.newsletter__text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter__text > h2 {
+  font-size: 4.5rem;
+  font-family: "Inter";
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.newsletter__text > p {
+  font-size: 1.5rem;
+  max-width: 400px;
+  font-family: "Inter";
+  color: #ccc;
+}
+
+.newsletter__item-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter__item-flex :not(:last-child) {
+  margin-right: 1.4rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  /* maxwidth 600px */
+  .newsletter__text {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  .newsletter__text > h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter__text > p {
+    font-size: 1.2rem;
+  }
+
+  .newsletter__item-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .newsletter__item-flex * {
+    margin-top: 0 !important;
+  }
+
+  .newsletter__item-flex :not(:last-child) {
+    margin-bottom: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  /* maxwidth 900px */
+  .newsletter {
+    padding: 0.65rem 0;
+  }
+
+  .newsletter__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .newsletter__text > h2 {
+    font-size: 2.3rem;
+  }
+
+  .newsletter__text > p {
+    font-size: 1.3rem;
+  }
+
+  .newsletter__item-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    margin-top: -8rem;
+  }
+
+  .newsletter__item-flex :not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  /* maxwidth 1200px */
+  .newsletter {
+    padding: 0.65rem 0;
+  }
+
+  .newsletter__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .newsletter__text > h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter__text > p {
+    font-size: 1.2rem;
+  }
+
+  .newsletter__item-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -8rem;
+  }
+
+  .newsletter__item-flex :nth-child(4) {
+    display: none;
+  }
+
+  .newsletter__item-flex :not(:last-child) {
+    margin-bottom: 0;
+  }
+}

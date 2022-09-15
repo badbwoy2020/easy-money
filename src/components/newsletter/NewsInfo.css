@@ -1,0 +1,57 @@
+.subinfo {
+  margin-top: 15rem;
+  padding: 1rem;
+  max-width: 290px;
+  text-align: center;
+}
+
+.subinfo h2 {
+  font-size: 2rem;
+  font-family: "Inter";
+  color: dimgray;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subinfo p {
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+  font-family: "Inter";
+  color: #ccc;
+}
+
+@media screen and (max-width: 37.5em) {
+  .subinfo p :not(:last-child) {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  /* max-width900px */
+  .subinfo h2 {
+    font-size: 2rem;
+    font-family: "Inter";
+    color: dimgray;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .subinfo p {
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  /* max-width900px */
+  .subinfo h2 {
+    font-size: 2.5rem;
+    font-family: "Inter";
+    color: dimgray;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .subinfo p {
+    line-height: 1.9rem;
+  }
+}

@@ -1,0 +1,25 @@
+.modal {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 22rem;
+  background-color: white;
+  padding: 1.3rem 3rem;
+}
+
+.modal__left {
+  text-align: right;
+}
+
+.modal p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-family: "Inter";
+}
+
+.modal > p :not(:last-child) {
+  margin-bottom: 2rem !important;
+}

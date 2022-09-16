@@ -3,7 +3,7 @@ import "./Header.css";
 import { Logo } from "../../assets/icons";
 import { useStateValue } from "../../context/DataLayer";
 function Header() {
-  const [{}, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
   return (
     <div className="header">
       <div className="header__item-flex ">

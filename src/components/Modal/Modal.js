@@ -4,7 +4,7 @@ import { useStateValue } from "../../context/DataLayer";
 import "./Modal.css";
 
 function Modal() {
-  const [{}, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
   return (
     <div className="modal">
       <div

@@ -1,0 +1,34 @@
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
+.sign__box {
+  background: #f4f4f4;
+  padding: 4rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25rem;
+}
+
+.sign__box h1 {
+  font-size: 2.5rem;
+  font-family: "Inter";
+}
+
+.sign__box p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Inter";
+  margin-top: 1.2rem;
+}

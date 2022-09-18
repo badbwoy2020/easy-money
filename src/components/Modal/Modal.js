@@ -1,20 +1,13 @@
 import React from "react";
 import { Iconclose } from "../../assets/icons";
-import { useStateValue } from "../../context/DataLayer";
+import { useAuth } from "../../context/LoginContext";
 import "./Modal.css";
 
 function Modal() {
-  const [dispatch] = useStateValue();
+  const { setModal } = useAuth();
   return (
     <div className="modal">
-      <div
-        className="modal__left"
-        onClick={() =>
-          dispatch({
-            type: "CLOSE_MODAL",
-          })
-        }
-      >
+      <div className="modal__left" onClick={() => setModal(false)}>
         <Iconclose />
       </div>
       <p>Home</p>

@@ -1,8 +1,11 @@
 export const initialState = {
   modal: false,
+  user: false,
 };
 
-function reducer(state, action) {
+const reducer = (state, action) => {
+  // debugging tool.
+  console.log(action);
   switch (action.type) {
     case "OPEN_MODAL":
       // OPEN ODAL
@@ -19,9 +22,10 @@ function reducer(state, action) {
         ...state,
         modal: false,
       };
+
     default:
       return state;
   }
-}
+};
 
 export default reducer;
